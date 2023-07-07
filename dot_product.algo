@@ -1,0 +1,38 @@
+PROCEDURE dot_product(VAR PS:INTEGER VAR IR:INTEGER, VAR V1: INTEGER, VAR V2: INTEGER)
+
+BEGIN
+    v1: ARRAY_OF INTEGER[X];
+    V2: ARRAY_OF INTEGER[Y];
+    PS: ARRAY_OF INTEGER[Z];
+    IR:= V1 + V2
+    FOR i FROM 0 TO X STEP 1  DO
+    Read(X)
+    PS[i]:= PS[i][X] //dot product for ARRAY OF LENGTH
+    END_FOR
+    Read(Y)
+    FOR j FROM 0 TO Y STEP 1  DO
+    PS[j]:= PS[j][Y] //dot product for ARRAY OF LENGTH
+    END_FOR
+    Read(Z)
+    FOR k FROM 0 TO Z STEP 1  DO
+    PS[k]:= PS[k][Z] //dot product for ARRAY OF LENGTH
+    END_FOR
+END
+
+PROCEDURE dot_product(PS: INTEGER)
+
+BEGIN
+    PS[i][j]:= PS[i][j] + IR[i][k] +IR[j][k] 
+    Write(PS);
+END
+
+ALGORITHM dot_product
+VAR
+    v1: INTEGER;
+    V2: INTEGER
+    PS: INTEGER
+    IR: INTEGER
+BEGIN
+    Write(IR)
+    Write(PS)
+END

@@ -1,0 +1,20 @@
+ALGORITHM algorithm_name
+VAR
+    arr1: INTEGER
+    arr2: INTEGER
+    sum_arr1_2: INTEGER
+BEGIN
+    sum_arr1_2:= 0
+    arr1:= [3, 1, 7, 9, 2, 5, 13, 12, 6, 10] // A set(array) of 10  elements
+    Read(arr1 : ARRAY_OF INTEGER[10];)
+    arr2:= [2, 4, 1, 9, 3, 8, 5, 12, 7] // A set(array) of 9  elements
+    Read(arr2 : ARRAY_OF INTEGER[9];)
+    FOR i FROM 0 TO 10 STEP 1 DO //for element from index 0 to 10 for every 1 step
+       IF  (arr1[i] = arr2[i]) THEN //when arr1 equals arr2, we have a case of distinct element
+        sum_arr1_2 = sum_arr1_2 + arr1[i] // add the element to initial value of sum
+    ELSE
+        sum_arr1_2 = sum_arr1_2 // if compared elements are not equal, return initial value of sum
+    END_IF 
+    END_FOR
+    Write(sum_arr1_2) //output sum after the loop is completed.
+END
